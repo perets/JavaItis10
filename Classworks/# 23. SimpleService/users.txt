@@ -1,0 +1,3 @@
+1|null|null|0|null|null|marsel|qwerty007|USER
+2|null|null|0|null|null|nadir|qwerty008|USER
+3|null|null|0|null|null|perets|gthtrehbv|USER
