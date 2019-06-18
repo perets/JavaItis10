@@ -5,34 +5,44 @@ class Program {
 		Scanner scanner = new Scanner(System.in);
 
 		int finish = -1;	
-		int current = scanner.nextInt();
-		int counter = 1;
-		int resultForOutput;
+		int current; // = scanner.nextInt();
+		boolean isNeedSumm = true;
+		boolean isInputCorrect = true;
 		while (current!=finish){
-			if (counter%2 != 0){
-				resultForOutput = 1;
+			current = scanner.nextInt();
+			if isInputCorrect {
+				if (isNeedSumm){
 					while(current > 0){
-						resultForOutput = resultForOutput * current % 10;
+						resultForOutput = resultForOutput + current % 10;
 						current=current/10;
-				}
+					}
 				System.out.println(resultForOutput);
 				counter++;
+
 			} else {
-				
-				resultForOutput = 0;
-					while(current > 0){
-						resultForOutput = resultForOutput + current%10;
-						current=current/10;
-				}
-				System.out.println(resultForOutput);
-				counter++;
+				continue;
 			}
 
-			current=scanner.nextInt();
-			while(resultForOutput%2 != current%2){
-			 	System.out.println("PLEASE REPEAT");
-			 	current=scanner.nextInt();
-			}
+			
+			//считаем произведение 
+
+
+			// } else {
+				
+			// 	resultForOutput = 0;
+			// 		while(current > 0){
+			// 			resultForOutput = resultForOutput + current%10;
+			// 			current=current/10;
+			// 	}
+			// 	System.out.println(resultForOutput);
+			// 	counter++;
+			// }
+
+			// current=scanner.nextInt();
+			// while(resultForOutput%2 != current%2){
+			//  	System.out.println("PLEASE REPEAT");
+			//  	current=scanner.nextInt();
+			// }
 		}
 	}
 }
